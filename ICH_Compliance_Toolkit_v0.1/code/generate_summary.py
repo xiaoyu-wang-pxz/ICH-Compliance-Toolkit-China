@@ -1,6 +1,9 @@
-
+from matplotlib import rcParams
 import pandas as pd
 import matplotlib.pyplot as plt
+
+rcParams['font.sans-serif'] = ['SimHei']
+rcParams['axes.unicode_minus'] = False 
 
 infile = "N100_编码表模板.xlsx"
 df = pd.read_excel(infile, sheet_name="data")
